@@ -43,6 +43,9 @@ con generacion de archivo encryptado dentro del directorio ```wallets/``` se gen
 > npm run build
 
 
+Desencriptar (solicita wallet a desencriptar y frase de encriptacion o serializacion y debe encontrarse previamente guardada el encriptado en el folder de wallets)
+
+> npm run desencriptar
 
 
 
