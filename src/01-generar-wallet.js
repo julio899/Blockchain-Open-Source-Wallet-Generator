@@ -26,6 +26,7 @@ const cadenaHexadecimalUnicaAleatorea = web3.utils.sha3(
 // Generacion de la Wallet
 const wallet = web3.eth.accounts.create(cadenaHexadecimalUnicaAleatorea);
 
+// simplemente para visualizarla en la consola
 console.log({ wallet });
 
 // Generacion de QR de la Wallet Address (Cartera)
