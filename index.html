@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Generate Wallet</title>
+	</head>
+	<body>
+		<h1>Blockchain Open Source Wallet Generator</h1>
+		<article id="wallet-info"></article>
+		<p id="entropia-info"></p>
+		<p id="lbl-address"></p>
+
+		<div class="container-qr">
+			<div id="qrcode-address"></div>
+			<div id="qrcode-private-key"></div>
+		</div>
+
+		<div class="container-qr">
+			<label>address wallet</label>
+			<label>private key</label>
+		</div>
+
+		<section class="note">Nota: EL PROPÓSITO ES DAR CONOCIMIENTO Y EMPODERAMIENTO AL USUARIO, QUE PUEDA SABER LA FORMA DE COMO TENER EL CONTROL TOTAL Y DE FORMA DESCENTRALIZADA SIN INTERMEDIARIOS, NO SE GUARDA INFORMACIÓN DE NINGÚN TIPO, USTED ES EL RESPONSABLE DE MANTENER A SALVO SU INFORMACIÓN, LA IDEA ES QUE PUEDAS REPLICAR LO QUE ESTÁS VISUALIZANDO, O USARLO DE FORMA INDEPENDIENTE Y SEGURA, CONOCER EL FUNCIONAMIENTO DE UNA BLOCKCHAIN Y QUE LA BLOCKCHAIN REALMENTE NO CONOCE FRASE SEMILLA Y TODO EL PODER ESTÁ EN TU PRIVATE KEY (LLAVE PRIVADA), ESTA UTILIDAD ESTA AL ALCANCE DE TODOS Y DE CUALQUIERA PUEDE MANTENER SUS FONDOS SEGUROS SIN DEPENDENCIA ALGUNA DE GRANDES EMPRESAS, TAMBIÉN UNA ALTERNATIVA EFICAZ DE TENER EL CONTROL. (EL CONOCIMIENTO TE LIBERA).</section>
+
+		<p class="gpl">Esta obra específica que vez está bajo la licencia <a href="https://www.gnu.org/licenses/gpl-3.0.html">GPLv3</a> (GENERAL PUBLIC LICENSE) Distribuir libremente de forma GRATUITA, libertad de usar, estudiar, compartir (copiar) y modificar el software.</p>
+
+		<p class="donation">
+			Si desea realizar alguna donacion de forma desinterezada para contribuir para la creacion de contenido OpenSource de este tipo lo puede hacer a la siguente address 
+			<b>0XA6C6235ED8C18DD15105CEBAE87228D9670E1974</b>
+		</p>
+
+
+
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/web3/1.8.1/web3.min.js"></script>
+		<script src="easy.qrcode.min.js"></script>
+		<script>
+			window.addEventListener("load", function (event) {
+				console.log("'Todos los recursos terminaron de cargar!");
+
+				const web3 = new Web3();
+				const cadenaHexadecimalUnicaAleatorea = web3.utils.sha3(
+					Math.random(0, 10000000).toString() +
+						web3.utils.randomHex(32)
+				);
+				const wallet = web3.eth.accounts.create(
+					cadenaHexadecimalUnicaAleatorea
+				);
+
+				document.querySelector("#wallet-info").innerHTML =
+					JSON.stringify(wallet);
+				
+				document
+					.querySelector("#entropia-info")
+					.append("Entropía: " + cadenaHexadecimalUnicaAleatorea);
+				
+				document
+					.querySelector("#lbl-address")
+					.append(wallet.address);
+
+					
+
+				// Options
+				var options = {
+					text: wallet.address,
+				    colorDark : "#004f05",
+				    colorLight : "transparent",
+				};
+
+				// Create QRCode Object
+				new QRCode(document.getElementById("qrcode-address"), options);
+
+				// Options
+				var options = {
+					text: wallet.privateKey,
+				    colorDark : "#ff2e00",
+				    colorLight : "transparent",
+				};
+
+				// Create QRCode Object
+				new QRCode(
+					document.getElementById("qrcode-private-key"),
+					options
+				);
+			});
+		</script>
+
+		<style>
+			*{
+				margin: 0px;
+				padding: 0px;
+			}
+			body{
+				
+			    height: 100vh;
+			    background-color: #08AEEA;
+			    background-image: linear-gradient(0deg, #08AEEA 0%, #2AF598 100%);
+			    margin: 0;
+			    padding: 0;
+			    border: none;
+			    display: flex;
+			    flex-flow: column;
+			    justify-content: center;
+			}
+
+			h1{
+			    text-align: center;
+			    text-transform: capitalize;
+			    font-weight: 100;
+    			padding: 25px 0;
+			}
+
+			p {
+				text-transform: uppercase;
+				font-family: monospace;
+				text-align: center;
+				font-size: 25px;			
+    			margin: 0;
+
+			}
+			p#lbl-address{				
+			    color: #fff;
+			    font-weight: 100;
+			    padding: 0;
+			    margin: 10px 0;
+			    font-family: sans-serif;
+			    text-shadow: -1px -1px 3px black;
+			}
+
+			article {
+				font-size: 1.2em;
+				display: flex;
+				flex-wrap: wrap;
+				text-align: center;
+				word-break: break-word;
+				justify-content: center;
+			}
+
+			.container-qr{
+				display: flex;
+			    flex-flow: row;
+			    justify-content: space-around;
+			    align-items: center;
+			}
+			
+			article{
+			    font-size: 1.2em;
+			    font-family: monospace;
+			}
+
+			label{
+			    font-size: 1.5em;
+			    font-family: monospace;
+			    text-transform: uppercase;
+			}
+
+			.note{
+			    font-size: 1em;
+			    font-family: monospace;
+			    text-transform: uppercase;
+			    padding: 2em 5em;
+			}
+			p.gpl{
+				text-transform: none;
+			    font-size: 0.8em;
+			    font-weight: 600;
+			}
+			p.donation{
+				font-size: 10px;
+			}
+
+		</style>
+	</body>
+</html>
