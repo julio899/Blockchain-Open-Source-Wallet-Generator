@@ -13,10 +13,9 @@ recursos usados y fuentes
   Generador de Codigos QR: https://github.com/ushelp/
   Generador de Codigos QR Por terminal: https://www.npmjs.com/package/qrcode-terminal
 
-## mini guia informativa 
-
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/E12dJYvvJ4Y" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+## mini guia informativa en YouTube
+	
+https://www.youtube.com/watch?v=E12dJYvvJ4Y
 
 
 ## visualizar de forma online
