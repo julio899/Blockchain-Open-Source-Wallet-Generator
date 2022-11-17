@@ -10,7 +10,9 @@ EL PROPÓSITO ES DAR CONOCIMIENTO Y EMPODERAMIENTO AL USUARIO, QUE PUEDA SABER L
 recursos usados y fuentes
 
   Libreria y Conector Web3 : https://web3js.readthedocs.io/
+  
   Generador de Codigos QR: https://github.com/ushelp/
+  
   Generador de Codigos QR Por terminal: https://www.npmjs.com/package/qrcode-terminal
 
 ## mini guia informativa en YouTube
