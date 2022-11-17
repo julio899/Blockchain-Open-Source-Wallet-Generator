@@ -13,7 +13,9 @@ recursos usados y fuentes
   Generador de Codigos QR: https://github.com/ushelp/
   Generador de Codigos QR Por terminal: https://www.npmjs.com/package/qrcode-terminal
 
+## visualizar de forma online
 
+https://julio899.github.io/Blockchain-Open-Source-Wallet-Generator/
 
 ## correr a travez de nodejs
 
