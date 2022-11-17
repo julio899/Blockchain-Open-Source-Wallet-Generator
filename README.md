@@ -4,7 +4,7 @@ Blockchain Open Source Wallet Generator
 EL PROPÓSITO ES DAR CONOCIMIENTO Y EMPODERAMIENTO AL USUARIO, QUE PUEDA SABER LA FORMA DE COMO TENER EL CONTROL TOTAL Y DE FORMA DESCENTRALIZADA SIN INTERMEDIARIOS, NO SE GUARDA INFORMACIÓN DE NINGÚN TIPO, USTED ES EL RESPONSABLE DE MANTENER A SALVO SU INFORMACIÓN, LA IDEA ES QUE PUEDAS REPLICAR LO QUE ESTÁS VISUALIZANDO, O USARLO DE FORMA INDEPENDIENTE Y SEGURA, CONOCER EL FUNCIONAMIENTO DE UNA BLOCKCHAIN Y QUE LA BLOCKCHAIN REALMENTE NO CONOCE FRASE SEMILLA Y TODO EL PODER ESTÁ EN TU PRIVATE KEY (LLAVE PRIVADA), ESTA UTILIDAD ESTA AL ALCANCE DE TODOS Y DE CUALQUIERA PUEDE MANTENER SUS FONDOS SEGUROS SIN DEPENDENCIA ALGUNA DE GRANDES EMPRESAS, TAMBIÉN UNA ALTERNATIVA EFICAZ DE TENER EL CONTROL. (EL CONOCIMIENTO TE LIBERA).
 
 
-<p class="gpl">Esta obra específica que vez está bajo la licencia <a href="https://www.gnu.org/licenses/gpl-3.0.html">GPLv3</a> (GENERAL PUBLIC LICENSE) Distribuir libremente de forma GRATUITA, libertad de usar, estudiar, compartir (copiar) y modificar el software.</p>
+<p class="gpl">Esta obra específica que vez está bajo la licencia <a href="https://www.gnu.org/licenses/gpl-3.0.html">GPLv3</a> (GENERAL PUBLIC LICENSE) Distribuir libremente de forma **GRATUITA**, libertad de usar, estudiar, compartir (copiar) y modificar el software.</p>
 
 
 recursos usados y fuentes
