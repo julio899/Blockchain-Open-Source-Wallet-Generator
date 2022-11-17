@@ -31,12 +31,12 @@ console.log({ wallet });
 
 // Generacion de QR de la Wallet Address (Cartera)
 qrcode.generate(wallet.address, { small: true }, function (qrcode) {
-	console.log("Wallet Address");
+	console.log("\tWallet Address");
 	console.log(qrcode);
 });
 
 // Generacion de QR de la privateKey (LLave Privada)
 qrcode.generate(wallet.privateKey, { small: true }, function (qrcode) {
-	console.log("Private Key");
+	console.log("\tPrivate Key");
 	console.log(qrcode);
 });
