@@ -10,7 +10,21 @@ EL PROPÓSITO ES DAR CONOCIMIENTO Y EMPODERAMIENTO AL USUARIO, QUE PUEDA SABER L
 recursos usados y fuentes
 
   Libreria y Conector Web3 : https://web3js.readthedocs.io/
-  Generador de Codigos QR: https://github.com/ushelp/EasyQRCodeJS
+  Generador de Codigos QR: https://github.com/ushelp/
+  Generador de Codigos QR Por terminal: https://www.npmjs.com/package/qrcode-terminal
+
+
+
+## correr a travez de nodejs
+
+- requerimientos Tener Node instalado en tu equipo
+
+Ejecutar el comando en la raiz del projecto
+> npm install
+
+generacion simple y visualizar la wallet y llave privada en terminal
+> node src/01-generar-wallet.js 
+
 
 <p class="donation">
 			Si desea realizar alguna donacion de forma desinterezada para contribuir para la creacion de contenido OpenSource de este tipo lo puede hacer a la siguente direccion 
