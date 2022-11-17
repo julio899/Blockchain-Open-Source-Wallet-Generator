@@ -30,6 +30,13 @@ return (async () => {
 				);
 
 				console.log({ privatedEncriptando, desencriptando });
+
+				// Generacion de QR de la privateKey (llave privada)
+				qrcode.generate(desencriptando.privateKey, { small: true }, function (qrcode) {
+					console.log("\t   Private Key");
+					console.log(qrcode);
+				});
+
 			} catch (e) {
 				// en caso de error se imprime el mensaje de error
 				console.log(`${e.name}: ${e.message}`);
