@@ -25,6 +25,18 @@ Ejecutar el comando en la raiz del projecto
 generacion simple y visualizar la wallet y llave privada en terminal
 > node src/01-generar-wallet.js 
 
+generacion visual por consola tambien ejecutando:
+> npm run start
+
+
+con generacion de archivo encryptado ```wallets/``` se generara el archivo encriptado que puede guardar en una memoria USB o lugar seguro 
+(NOTA: se solicita la frace de encriptacion y no se guarda en ningun sitio debe preservar su frace o palabras en logar seguro para poder deserealizar el archivo encryptado)
+
+> npm run build
+
+
+
+
 
 <p class="donation">
 			Si desea realizar alguna donacion de forma desinterezada para contribuir para la creacion de contenido OpenSource de este tipo lo puede hacer a la siguente direccion 
