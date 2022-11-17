@@ -38,7 +38,7 @@ return (async () => {
 				});
 
 			} catch (e) {
-				// en caso de error se imprime el mensaje de error
+				// en caso de error se imprime el mensaje de error al tratar de desencriptar
 				console.log(`${e.name}: ${e.message}`);
 			}
 		} else {
