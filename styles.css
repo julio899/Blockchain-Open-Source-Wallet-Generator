@@ -1,0 +1,149 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	min-height: 100vh;
+	background-color: #08aeea;
+	background-image: linear-gradient(0deg, #08aeea 0%, #2af598 100%);
+	padding: 24px 16px 48px;
+	font-family: monospace;
+	color: #0b2b26;
+}
+
+h1 {
+	text-align: center;
+	text-transform: capitalize;
+	font-weight: 300;
+	padding: 25px 0;
+	/* Blanco sobre el degradado superior queda en 2.5:1; el verde oscuro da 6:1. */
+	color: #043b32;
+	text-shadow: 0 1px 0 rgba(255, 255, 255, 0.35);
+}
+
+h2 {
+	/* 20px frente a los 16px del cuerpo: un paso claro sin competir con el h1. */
+	font-size: 1.25em;
+	text-transform: uppercase;
+	letter-spacing: 0.08em;
+	margin-bottom: 8px;
+}
+
+section {
+	max-width: 720px;
+	margin: 18px auto;
+	background: rgba(255, 255, 255, 0.72);
+	border-radius: 12px;
+	padding: 18px 20px;
+	text-align: center;
+}
+
+.aviso {
+	max-width: 720px;
+	margin: 0 auto 10px;
+	padding: 12px 16px;
+	font-size: 0.9em;
+	background: rgba(255, 255, 255, 0.85);
+	color: #0b2b26;
+	border-radius: 8px;
+	text-align: center;
+}
+
+.acciones {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 12px;
+	justify-content: center;
+	max-width: 720px;
+	margin: 0 auto;
+}
+
+button {
+	font-family: inherit;
+	font-size: 0.9em;
+	text-transform: uppercase;
+	letter-spacing: 0.04em;
+	padding: 12px 18px;
+	border: none;
+	border-radius: 8px;
+	background: #004f05;
+	color: #fff;
+	cursor: pointer;
+}
+
+button:hover {
+	background: #006b07;
+}
+
+button:focus-visible {
+	outline: 3px solid #004f05;
+	outline-offset: 3px;
+}
+
+.direccion,
+.secreto {
+	font-family: monospace;
+	font-size: 1em;
+	word-break: break-all;
+	margin: 8px 0;
+}
+
+.direccion {
+	text-transform: none;
+}
+
+.secreto {
+	background: rgba(0, 0, 0, 0.08);
+	border-radius: 6px;
+	padding: 10px;
+	user-select: all;
+}
+
+.nota {
+	font-size: 0.85em;
+	margin-top: 8px;
+}
+
+.advertencia {
+	color: #a31200;
+	font-size: 0.85em;
+	margin: 8px 0;
+	font-weight: 700;
+}
+
+.contenedor-qr {
+	display: flex;
+	justify-content: center;
+	margin-top: 10px;
+}
+
+/* Texto largo: nada de mayúsculas sostenidas, se lee peor (se pierden
+   ascendentes y descendentes). Mayúsculas solo en etiquetas cortas. */
+.note {
+	font-size: 0.9em;
+	line-height: 1.6;
+	text-transform: none;
+}
+
+p.gpl,
+p.donation {
+	max-width: 720px;
+	margin: 0 auto 10px;
+	padding: 10px 16px;
+	font-size: 0.875em;
+	line-height: 1.5;
+	text-align: center;
+	background: rgba(255, 255, 255, 0.72);
+	color: #0b2b26;
+	border-radius: 8px;
+}
+
+p.gpl {
+	font-weight: 600;
+}
+
+a {
+	color: inherit;
+}
