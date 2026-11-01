@@ -10,7 +10,7 @@
     "desencriptar": "node src/cli/03-deserealizar-wallet-encrypt.js",
     "recifrar": "node src/cli/04-recifrar-keystore.js",
     "build:web": "node scripts/build-web.js",
-    "test": "node --test \"test/**/*.test.js\"",
+    "test": "node --test",
     "audit": "npm audit --omit=dev"
   },
   "repository": {
