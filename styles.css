@@ -24,7 +24,8 @@ h1 {
 }
 
 h2 {
-	font-size: 1em;
+	/* 20px frente a los 16px del cuerpo: un paso claro sin competir con el h1. */
+	font-size: 1.25em;
 	text-transform: uppercase;
 	letter-spacing: 0.08em;
 	margin-bottom: 8px;
